@@ -50,9 +50,9 @@ void loop() {
 void Menu1 (){
   lcd.clear();
   lcd.setCursor(0,0);
-  lcd.print("A - Mover Carros");
+  lcd.print("A - Move Trolley");
   lcd.setCursor(0,1);
-  lcd.print("B - Mover Gancho");
+  lcd.print("B - Move Hook");
   while(digitalRead(pulsadoram) == LOW && digitalRead(pulsadorro) == LOW){}
 
   if(digitalRead(pulsadoram) == HIGH){
@@ -188,7 +188,7 @@ void MovimientoLongitudinal(){
 
   lcd.clear();
   lcd.setCursor(0, 0);
-  lcd.print("En movimiento...");
+  lcd.print("Moving...");
   
    if(cmlong > cmmoverlong){
     while(sensorlong.read() > cmmoverlong){
@@ -220,7 +220,7 @@ void MovimientoTransversal(){
   
   lcd.clear();
   lcd.setCursor(0, 0);
-  lcd.print("En movimiento...");
+  lcd.print("Moving...");
 
     do{
       motor4.setSpeed(255);
@@ -243,15 +243,15 @@ void MovimientoTransversal(){
 void MovimientoCarros1(){
 
   lcd.setCursor(0,0);
-  lcd.print("Eje transversal:");
+  lcd.print("Transversal axis:");
 
   switch (valortrans){
     case 1:
     lcd.clear();
     lcd.setCursor(0,0);
-    lcd.print("Eje transversal:");
+    lcd.print("Transversal axis:");
     lcd.setCursor(0,1);
-    lcd.print("Elegir con C > ");
+    lcd.print("Select with C >  ");
     lcd.print(valortrans);
     delay(500);
     while(digitalRead(pulsadoram) == LOW && digitalRead(pulsadorro) == LOW && digitalRead(pulsadoracep) == LOW){}
@@ -284,9 +284,9 @@ void MovimientoCarros1(){
 
     lcd.clear();
     lcd.setCursor(0,0);
-    lcd.print("Eje transversal:");
+    lcd.print("Transversal axis:");
     lcd.setCursor(0,1);
-    lcd.print("Elegir con C > ");
+    lcd.print("Select with C >  ");
     lcd.print(valortrans);
     delay(500);
     while(digitalRead(pulsadoram) == LOW && digitalRead(pulsadorro) == LOW && digitalRead(pulsadoracep) == LOW){}
@@ -317,9 +317,9 @@ void MovimientoCarros1(){
 
     lcd.clear();
     lcd.setCursor(0,0);
-    lcd.print("Eje transversal:");
+    lcd.print("Transversal axis:");
     lcd.setCursor(0,1);
-    lcd.print("Elegir con C > ");
+    lcd.print("Select with C >  ");
     lcd.print(valortrans);
     delay(500);
     while(digitalRead(pulsadoram) == LOW && digitalRead(pulsadorro) == LOW && digitalRead(pulsadoracep) == LOW){}
@@ -350,9 +350,9 @@ void MovimientoCarros1(){
 
     lcd.clear();
     lcd.setCursor(0,0);
-    lcd.print("Eje transversal:");
+    lcd.print("Transversal axis:");
     lcd.setCursor(0,1);
-    lcd.print("Elegir con C > ");
+    lcd.print("Select with C >  ");
     lcd.print(valortrans);
     delay(500);
     while(digitalRead(pulsadoram) == LOW && digitalRead(pulsadorro) == LOW && digitalRead(pulsadoracep) == LOW){}
@@ -383,9 +383,9 @@ void MovimientoCarros1(){
 
     lcd.clear();
     lcd.setCursor(0,0);
-    lcd.print("Eje transversal:");
+    lcd.print("Transversal axis:");
     lcd.setCursor(0,1);
-    lcd.print("Elegir con C > ");
+    lcd.print("Select with C >  ");
     lcd.print(valortrans);
     delay(500);
     while(digitalRead(pulsadoram) == LOW && digitalRead(pulsadorro) == LOW && digitalRead(pulsadoracep) == LOW){}
@@ -416,9 +416,9 @@ void MovimientoCarros1(){
 
     lcd.clear();
     lcd.setCursor(0,0);
-    lcd.print("Eje transversal:");
+    lcd.print("Transversal axis:");
     lcd.setCursor(0,1);
-    lcd.print("Elegir con C > ");
+    lcd.print("Select with C >  ");
     lcd.print(valortrans);
     delay(500);
     while(digitalRead(pulsadoram) == LOW && digitalRead(pulsadorro) == LOW && digitalRead(pulsadoracep) == LOW){}
@@ -452,7 +452,7 @@ void MovimientoCarros1(){
 
 void MoverCarros2(){
   lcd.setCursor(0,0);
-  lcd.print("Eje longitudinal:");
+  lcd.print("Longitudinal axis:");
 
   switch (valorlong){
 
@@ -460,9 +460,9 @@ void MoverCarros2(){
 
     lcd.clear();
     lcd.setCursor(0,0);
-    lcd.print("Eje longitudinal:");
+    lcd.print("Longitudinal axis:");
     lcd.setCursor(0,1);
-    lcd.print("Elegir con C > ");
+    lcd.print("Select with C >  ");
     lcd.print("A");
     delay(500);
     while(digitalRead(pulsadoram) == LOW && digitalRead(pulsadorro) == LOW && digitalRead(pulsadoracep) == LOW){}
@@ -495,9 +495,9 @@ void MoverCarros2(){
 
     lcd.clear();
     lcd.setCursor(0,0);
-    lcd.print("Eje longitudinal:");
+    lcd.print("Longitudinal axis:");
     lcd.setCursor(0,1);
-    lcd.print("Elegir con C > ");
+    lcd.print("Select with C >  ");
     lcd.print("B");
     delay(500);
     while(digitalRead(pulsadoram) == LOW && digitalRead(pulsadorro) == LOW && digitalRead(pulsadoracep) == LOW){}
@@ -528,9 +528,9 @@ void MoverCarros2(){
 
     lcd.clear();
     lcd.setCursor(0,0);
-    lcd.print("Eje longitudinal:");
+    lcd.print("Longitudinal axis:");
     lcd.setCursor(0,1);
-    lcd.print("Elegir con C > ");
+    lcd.print("Select with C >  ");
     lcd.print("C");
     delay(500);
     while(digitalRead(pulsadoram) == LOW && digitalRead(pulsadorro) == LOW && digitalRead(pulsadoracep) == LOW){}
@@ -561,9 +561,9 @@ void MoverCarros2(){
 
     lcd.clear();
     lcd.setCursor(0,0);
-    lcd.print("Eje longitudinal:");
+    lcd.print("Longitudinal axis:");
     lcd.setCursor(0,1);
-    lcd.print("Elegir con C > ");
+    lcd.print("Select with C >  ");
     lcd.print("D");
     delay(500);
     while(digitalRead(pulsadoram) == LOW && digitalRead(pulsadorro) == LOW && digitalRead(pulsadoracep) == LOW){}
@@ -594,9 +594,9 @@ void MoverCarros2(){
 
     lcd.clear();
     lcd.setCursor(0,0);
-    lcd.print("Eje longitudinal:");
+    lcd.print("Longitudinal axis:");
     lcd.setCursor(0,1);
-    lcd.print("Elegir con C > ");
+    lcd.print("Select with C >  ");
     lcd.print("E");
     delay(500);
     while(digitalRead(pulsadoram) == LOW && digitalRead(pulsadorro) == LOW && digitalRead(pulsadoracep) == LOW){}
@@ -627,9 +627,9 @@ void MoverCarros2(){
 
     lcd.clear();
     lcd.setCursor(0,0);
-    lcd.print("Eje longitudinal:");
+    lcd.print("Longitudinal axis:");
     lcd.setCursor(0,1);
-    lcd.print("Elegir con C > ");
+    lcd.print("Select with C >  ");
     lcd.print("F");
     delay(500);
     while(digitalRead(pulsadoram) == LOW && digitalRead(pulsadorro) == LOW && digitalRead(pulsadoracep) == LOW){}
@@ -660,9 +660,9 @@ void MoverCarros2(){
 
     lcd.clear();
     lcd.setCursor(0,0);
-    lcd.print("Eje longitudinal:");
+    lcd.print("Longitudinal axis:");
     lcd.setCursor(0,1);
-    lcd.print("Elegir con C > ");
+    lcd.print("Select with C >  ");
     lcd.print("G");
     delay(500);
     while(digitalRead(pulsadoram) == LOW && digitalRead(pulsadorro) == LOW && digitalRead(pulsadoracep) == LOW){}
@@ -693,9 +693,9 @@ void MoverCarros2(){
 
     lcd.clear();
     lcd.setCursor(0,0);
-    lcd.print("Eje longitudinal:");
+    lcd.print("Longitudinal axis:");
     lcd.setCursor(0,1);
-    lcd.print("Elegir con C > ");
+    lcd.print("Select with C >  ");
     lcd.print("H");
     delay(500);
     while(digitalRead(pulsadoram) == LOW && digitalRead(pulsadorro) == LOW && digitalRead(pulsadoracep) == LOW){}
@@ -726,9 +726,9 @@ void MoverCarros2(){
 
     lcd.clear();
     lcd.setCursor(0,0);
-    lcd.print("Eje longitudinal:");
+    lcd.print("Longitudinal axis:");
     lcd.setCursor(0,1);
-    lcd.print("Elegir con C > ");
+    lcd.print("Select with C >  ");
     lcd.print("I");
     delay(500);
     while(digitalRead(pulsadoram) == LOW && digitalRead(pulsadorro) == LOW && digitalRead(pulsadoracep) == LOW){}
@@ -764,9 +764,9 @@ void MoverCarros2(){
 void MoverGanchos(){
   lcd.clear();
   lcd.setCursor(0,0);
-  lcd.print("A - Subir Gancho");
+  lcd.print(A - Raise Hook");
   lcd.setCursor(0,1);
-  lcd.print("B - Bajar Gancho");
+  lcd.print("Raising hook");
   delay(1000);
   while(digitalRead(pulsadoram) == LOW && digitalRead(pulsadorro) == LOW){}
 
